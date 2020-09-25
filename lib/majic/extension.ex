@@ -65,7 +65,7 @@ defmodule Majic.Extension do
     "." <> old = old_ext
 
     if old in exts do
-      Enum.join([basename, old])
+      Enum.join([basename, ".", old])
     else
       ext = List.first(exts)
 
